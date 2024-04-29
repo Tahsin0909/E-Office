@@ -38,7 +38,7 @@ const Navbar = () => {
     };
     return (
 
-        <div className="border p-4 h-[100vh] bg-slate-200">
+        <div className=" p-4 md:h-[100vh] md:bg-slate-200">
 
             {/* // large and medium devices  */}
             <div className="hidden sm:flex">
@@ -50,7 +50,7 @@ const Navbar = () => {
                 <div className="drawer-content">
                     {/* Page content here */}
 
-                    <label htmlFor="my-drawer" className=" drawer-button"><FiMenu /></label>
+                    <label htmlFor="my-drawer" className=" drawer-button"><FiMenu size={25}/></label>
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
