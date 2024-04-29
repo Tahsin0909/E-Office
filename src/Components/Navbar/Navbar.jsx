@@ -15,21 +15,21 @@ const Navbar = () => {
                 <NavLink onClick={handleDrawer}
                     to={`/`}
                     className={({ isActive, isPending }) =>
-                        isActive ? "text-blue-600 " : isPending ? "pending" : "text-black"}
+                        isActive ? "text-white  rounded-md  p-1 bg-blue-700 transition-colors" : isPending ? "pending p-1" : "text-black "}
                 >
                     Employee Salary
                 </NavLink>
                 <NavLink onClick={handleDrawer}
                     to={`/paySlip`}
                     className={({ isActive, isPending }) =>
-                        isActive ? "text-blue-600 " : isPending ? "pending" : "text-black"}
+                    isActive ? "text-white  rounded-md  p-1 bg-blue-700 transition-colors" : isPending ? "pending p-1" : "text-black "}
                 >
                     Payslip
                 </NavLink>
                 <NavLink onClick={handleDrawer}
                     to={`/payrollItem`}
                     className={({ isActive, isPending }) =>
-                        isActive ? "text-blue-600 " : isPending ? "pending" : "text-black"}
+                    isActive ? "text-white  rounded-md  p-1 bg-blue-700 transition-colors" : isPending ? "pending p-1" : "text-black "}
                 >
                     Payroll
                 </NavLink>
@@ -38,7 +38,7 @@ const Navbar = () => {
     };
     return (
 
-        <div className="border p-4 h-[100vh]">
+        <div className="border p-4 h-[100vh] bg-slate-200">
 
             {/* // large and medium devices  */}
             <div className="hidden sm:flex">
