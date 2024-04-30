@@ -3,7 +3,7 @@ import SharedBtn from "../Shared/button/SharedBtn";
 const Employee_Salary = () => {
 
     return (
-        <div className="border md:p-4 py-2 w-full">
+        <div className=" md:p-4 py-2">
             {/* heading  */}
             <h1 className="text-2xl font-bold text-blue-700">Employee Salary</h1>
             <div className="flex justify-end">
