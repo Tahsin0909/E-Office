@@ -10,7 +10,7 @@ const SideBar = () => {
     }
     const NavOptions = () => {
         return (
-            <div className="flex flex-col gap-4 lg:text-lg w-40">
+            <div className="flex flex-col gap-4 lg:text-lg w-40 h-full">
                 <img className="md:w-40 w-20" src="https://i.ibb.co/hF5G0d0/Black-And-White-Aesthetic-Minimalist-Modern-Simple-Typography-Coconut-Cosmetics-Logo-1-removebg-prev.png" alt="e office icon" />
                 <NavLink onClick={handleDrawer}
                     to={`/`}

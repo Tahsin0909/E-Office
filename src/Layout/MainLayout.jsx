@@ -6,7 +6,7 @@ const MainLayout = () => {
     return (
         <div className='flex '>
             <SideBar />
-            <div className='w-full'>
+            <div className='w-full h-full'>
                 <Navbar />
                 <Outlet />
             </div>

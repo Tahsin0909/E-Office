@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "employee_id": "G-12345",
+    "join_date": "2024-04-30",
+    "role": "Software Engineer",
+    "salary": 60000,
+    "img": "https://i.ibb.co/KWqX7Sn/close-up-shot-happy-delighted-charming-young-bearded-man-with-moustache-glasses-black-trendy-beanie.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "employee_id": "G-23456",
+    "join_date": "2024-04-30",
+    "role": "Software Developer",
+    "salary": 55000,
+    "img": "https://i.ibb.co/C2NzYJD/portrait-man-laughing-23-2148859448.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Michael Johnson",
+    "email": "michael.johnson@example.com",
+    "employee_id": "G-34567",
+    "join_date": "2024-04-30",
+    "role": "Senior Software Engineer",
+    "salary": 70000,
+    "img": "https://i.ibb.co/bggZ111/front-view-smiley-business-man-23-2148479583.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Emily Brown",
+    "email": "emily.brown@example.com",
+    "employee_id": "G-45678",
+    "join_date": "2024-04-30",
+    "role": "Software Tester",
+    "salary": 50000,
+    "img": "https://i.ibb.co/jTRZmfk/friendly-smiling-woman-looking-pleased-front-176420-20779.jpg"
+  },
+  {
+    "id": 5,
+    "name": "David Wilson",
+    "email": "david.wilson@example.com",
+    "employee_id": "G-56789",
+    "join_date": "2024-04-30",
+    "role": "UX/UI Designer",
+    "salary": 60000,
+    "img": "https://i.ibb.co/Dt45kHH/outdoor-shot-young-caucasian-man-with-beard-relaxing-open-air-surrounded-by-beautiful-mountain-setti.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Sarah Martinez",
+    "email": "sarah.martinez@example.com",
+    "employee_id": "G-67890",
+    "join_date": "2024-04-30",
+    "role": "Product Manager",
+    "salary": 75000,
+    "img": "https://i.ibb.co/H7TrrKS/front-view-smiley-girl-looking-away-23-2148244695.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Christopher Lee",
+    "email": "christopher.lee@example.com",
+    "employee_id": "G-78901",
+    "join_date": "2024-04-30",
+    "role": "Data Analyst",
+    "salary": 65000,
+    "img": "https://i.ibb.co/CvZDFG4/young-girl-looking-camera-1187-4948.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Amanda Taylor",
+    "email": "amanda.taylor@example.com",
+    "employee_id": "G-89012",
+    "join_date": "2024-04-30",
+    "role": "Software Engineer",
+    "salary": 60000,
+    "img": "https://i.ibb.co/N1v7YFV/portrait-smiling-blonde-woman-23-2148316635.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Matthew Anderson",
+    "email": "matthew.anderson@example.com",
+    "employee_id": "G-90123",
+    "join_date": "2024-04-30",
+    "role": "Business Analyst",
+    "salary": 70000,
+    "img": "https://i.ibb.co/L1V4tz4/headshot-attractive-man-smiling-pleased-looking-intrigued-standing-blue-background-1258-65468.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Jessica Garcia",
+    "email": "jessica.garcia@example.com",
+    "employee_id": "G-01234",
+    "join_date": "2024-04-30",
+    "role": "Software Developer",
+    "salary": 55000,
+    "img": "https://i.ibb.co/KWqX7Sn/close-up-shot-happy-delighted-charming-young-bearded-man-with-moustache-glasses-black-trendy-beanie.jpg"
+  }
+]
