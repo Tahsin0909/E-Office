@@ -1,11 +1,14 @@
 import { Outlet } from 'react-router-dom';
-import Navbar from '../Components/Navbar/Navbar';
+import SideBar from '../Components/Navbar/SideBar';
 
 const MainLayout = () => {
     return (
         <div className='flex '>
-            <Navbar/>
-            <Outlet/>
+            <SideBar/>
+            <div>
+                <h1>navbar</h1>
+                <Outlet />
+            </div>
         </div>
     );
 };

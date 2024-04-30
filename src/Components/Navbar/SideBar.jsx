@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
-const Navbar = () => {
+const SideBar = () => {
     // state for drawer toogle 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     // drawer handle 
@@ -63,4 +63,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default SideBar;
