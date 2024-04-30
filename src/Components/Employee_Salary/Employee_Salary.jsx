@@ -11,6 +11,10 @@ const Employee_Salary = () => {
             .then(data => SetEmployeeData(data))
     }, [pagePerView])
     console.log(pagePerView);
+    const handlLocalStorage = (Data) =>{
+        const stringifyData = JSON.stringify(Data)
+        localStorage.setItem('employee', stringifyData )
+    }
     return (
         <div className=" md:p-4 py-2">
             {/* heading  */}
@@ -183,7 +187,7 @@ const Employee_Salary = () => {
                                 </td>
                                 <td className="px-6 py-3">
                                     <label className="relative cursor-pointer">
-                                        <input type="checkbox" className="sr-only peer" checked />
+                                        <input type="checkbox" className="sr-only peer"/>
                                         <div
                                             className="w-11 h-6 flex items-center bg-gray-300 rounded-full peer peer-checked:after:translate-x-full after:absolute after:left-[2px] peer-checked:after:border-white after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#007bff]">
                                         </div>
@@ -193,7 +197,7 @@ const Employee_Salary = () => {
                                 {data.salary}
                                 </td>
                                 <td className="px-6 py-3 text-sm">
-                                    <Link className=" btn-link" to={'paySlip'}>Payslip</Link>
+                                    <Link onClick={() => handlLocalStorage(data)} className=" btn-link" to={'paySlip'}>Payslip</Link>
                                 </td>
                                 <td className="px-6 py-3">
                                     <button className="mr-4" title="Edit">
