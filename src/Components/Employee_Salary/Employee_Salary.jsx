@@ -229,7 +229,7 @@ const Employee_Salary = () => {
                     </tbody>
                 </table>
                 <div className="md:flex mt-4 px-6">
-                    <p className="text-sm text-gray-400 flex-1">Showind 1 to 5 of 100 entries</p>
+                    <p className="text-sm text-gray-400 flex-1">Showind 1 to 5 of 10 entries</p>
                     <div className="flex items-center max-md:mt-4">
                         <p className="text-sm text-gray-400">Display</p>
                         <select onChange={(e) => SetPagePerView(e.target.value)} className="text-sm text-gray-400 border border-gray-400 rounded h-7 mx-4 outline-none">
