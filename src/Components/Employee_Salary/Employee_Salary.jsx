@@ -3,17 +3,19 @@ import SharedBtn from "../Shared/button/SharedBtn";
 import { useEffect, useState } from "react";
 const Employee_Salary = () => {
     const [employeeData, SetEmployeeData] = useState(null)
+    const [loading, SetLoading] = useState(true)
     // eslint-disable-next-line no-unused-vars
     const [pagePerView, SetPagePerView] = useState(5)
     useEffect(() => {
         fetch('/data.json')
             .then(res => res.json())
             .then(data => SetEmployeeData(data))
+        SetLoading(false)
     }, [pagePerView])
     console.log(pagePerView);
-    const handlLocalStorage = (Data) =>{
+    const handlLocalStorage = (Data) => {
         const stringifyData = JSON.stringify(Data)
-        localStorage.setItem('employee', stringifyData )
+        localStorage.setItem('employee', stringifyData)
     }
     return (
         <div className=" md:p-4 py-2">
@@ -154,7 +156,7 @@ const Employee_Salary = () => {
                         </tr>
                     </thead>
                     <tbody className="whitespace-nowrap">
-                        {
+                        {loading ? <p className="flex justify-center items-center">Loading..</p> :
                             employeeData?.slice(0, pagePerView).map(data => <tr key={data.id} className="odd:bg-blue-50">
                                 <td className="pl-6 w-8">
                                     <input id="checkbox1" type="checkbox" className="hidden peer" />
@@ -187,14 +189,14 @@ const Employee_Salary = () => {
                                 </td>
                                 <td className="px-6 py-3">
                                     <label className="relative cursor-pointer">
-                                        <input type="checkbox" className="sr-only peer"/>
+                                        <input type="checkbox" className="sr-only peer" />
                                         <div
                                             className="w-11 h-6 flex items-center bg-gray-300 rounded-full peer peer-checked:after:translate-x-full after:absolute after:left-[2px] peer-checked:after:border-white after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#007bff]">
                                         </div>
                                     </label>
                                 </td>
                                 <td className="px-6 py-3 text-sm">
-                                {data.salary}
+                                    {data.salary}
                                 </td>
                                 <td className="px-6 py-3 text-sm">
                                     <Link onClick={() => handlLocalStorage(data)} className=" btn-link" to={'paySlip'}>Payslip</Link>
