@@ -1,7 +1,15 @@
+import SharedBtn from "../../Shared/button/SharedBtn";
 
-const Additions = () => {
+// eslint-disable-next-line react/prop-types
+const Additions = ({ props }) => {
     return (
         <div>
+            {/* add button  */}
+            <div className="flex justify-end m-6">
+                <SharedBtn text={props} onClick={() => document.getElementById('my_modal_1').showModal()}/>
+            </div>
+
+
             <div className="overflow-x-auto">
                 <table className="table  rounded-md p-4 bg-zinc-50 shadow-xl">
                     {/* head */}

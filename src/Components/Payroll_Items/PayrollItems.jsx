@@ -21,13 +21,13 @@ const PayrollItems = () => {
                     </TabList>
 
                     <TabPanel>
-                        <Additions />
+                        <Additions props={'Add Additions'} />
                     </TabPanel>
                     <TabPanel>
-                        <Additions />
+                        <Additions props={'Add Overtime'}/>
                     </TabPanel>
                     <TabPanel>
-                        <Additions />
+                        <Additions props={'Add Deductions'}/>
                     </TabPanel>
                 </Tabs>
             </div>
